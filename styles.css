@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #161e31;
+    font-family: 'Raleway', sans-serif;
+}
+
+.content-wrapper {
+    position: relative;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#news-heading-container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #3f3f67;
+
+    h2{
+        margin: 0;
+        font-size: 25px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: #cfcfd9;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #dee1f2;
+    }
+
+    p{
+        font-size: 15px;
+        padding: 5px;
+        margin: 0;
+        opacity: 0.9;
+        color: #cfcfd9;
+    }
+
+    button{
+        background-color: #242252;
+        padding: 10px;
+        color: #c1c0d9;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        
+        border: none;
+        outline: none;
+        border-radius: 10px;
+
+        &:hover{
+            cursor: pointer;
+            opacity: 0.8;
+        }
+    }
+}
+
+#search-input{
+    margin-top: 10px;
+    outline: none;
+    padding: 5px;
+}
+
+.sort-btn{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #f6b17c;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: 2d3250;
+
+    &:hover{
+        cursor: pointer;
+        opacity: 0.9;
+    }
+
+}
+
+
+#news-table {
+    width: 900px;
+    height: 480px;
+    table-layout: fixed;
+    background-color: #2d3250;
+    box-shadow: -5px 4px 10px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.header-container{
+    border-bottom: 2px solid #f6b17c;
+}
+  
+.table-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d3250;
+    color: #d5dce4;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    /* height: 60px; */
+    padding: 20px;
+}
+
+.table-heading td:nth-child(1){
+    width: 300px;
+}
+
+.table-heading td:nth-child(2){
+    width: 150px;
+}
+
+.table-heading td:nth-child(3){
+    width: 100px;
+}
+
+.table-heading td:nth-child(4){
+    width: 100px;
+}
+
+.row-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.table-row{
+    color: #eff2f5;
+    border-bottom: 1px solid #1d1d4f;
+
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.9;
+}
+
+.table-row td:nth-child(1){
+    width: 300px;
+}
+
+.table-row td:nth-child(2){
+    width: 150px;
+}
+
+.table-row td:nth-child(3){
+    width: 100px;
+}
+
+.table-row td:nth-child(4){
+    width: 100px;
+}
+
+
+.row-title{
+    padding: 20px;
+    font-size: 13px;
+    width: 200px;
+    height: 40px;
+}
+
+.row-description{
+    width: 100px;
+    height: 40px;
+    color: #6f6e99;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    a{
+        text-align: none;
+        color: #eff2f5;
+        opacity: 0.9;
+        font-size: 12px;
+    }
+}
+
+.row-pub-date{
+    font-size: 12px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.row-creator{
+    font-size: 13px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+#pagination-container{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 70%;
+
+    div{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button{
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: #fbb173;
+            color: #2d3250  ;
+            border-radius: 5px;
+            font-size: 15px;
+            padding: 5px;
+            width: 25px;
+            height: 25px;
+            
+            &:hover{
+                cursor: pointer;
+                opacity: 0.9;
+            }
+        }
+    }
+
+}
